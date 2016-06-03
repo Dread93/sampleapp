@@ -1,0 +1,106 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'npm@lastest' ]
+2 info using npm@3.9.5
+3 info using node@v4.4.5
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData npm@lastest
+8 silly fetchNamedPackageData npm
+9 silly mapToRegistry name npm
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'npm',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'npm',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/npm
+14 verbose request uri https://registry.npmjs.org/npm
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 8:35:44 PM
+17 verbose request id 284bffe68661d695
+18 verbose etag "3SE0J2BMMPXV6N2L3P7GHMH1"
+19 http request GET https://registry.npmjs.org/npm
+20 http 200 https://registry.npmjs.org/npm
+21 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+21 verbose headers   etag: '"BPEOOFBJLGHGWVNBOUMCDVD7P"',
+21 verbose headers   'content-type': 'application/json',
+21 verbose headers   'content-encoding': 'gzip',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   'content-length': '644808',
+21 verbose headers   'accept-ranges': 'bytes',
+21 verbose headers   date: 'Fri, 03 Jun 2016 00:35:45 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   age: '74',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-atl6225-ATL',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '1',
+21 verbose headers   'x-timer': 'S1464914145.003579,VS0,VE1',
+21 verbose headers   vary: 'Accept-Encoding' }
+22 silly get cb [ 200,
+22 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 silly get     etag: '"BPEOOFBJLGHGWVNBOUMCDVD7P"',
+22 silly get     'content-type': 'application/json',
+22 silly get     'content-encoding': 'gzip',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     'content-length': '644808',
+22 silly get     'accept-ranges': 'bytes',
+22 silly get     date: 'Fri, 03 Jun 2016 00:35:45 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     age: '74',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-atl6225-ATL',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1464914145.003579,VS0,VE1',
+22 silly get     vary: 'Accept-Encoding' } ]
+23 verbose get saving npm to /home/kadeem/.npm/registry.npmjs.org/npm/.cache.json
+24 verbose correctMkdir /home/kadeem/.npm correctMkdir not in flight; initializing
+25 silly fetchPackageMetaData Error: No compatible version found: npm@lastest
+25 silly fetchPackageMetaData Valid install targets:
+25 silly fetchPackageMetaData 3.9.6, 3.9.5, 3.9.4, 3.9.3, 3.9.2, 3.9.1, 3.9.0, 3.8.9, 3.8.8, 3.8.7, 3.8.6, 3.8.5, 3.8.4, 3.8.3, 3.8.2, 3.8.1, 3.8.0, 3.7.5, 3.7.4, 3.7.3, 3.7.2, 3.7.1, 3.7.0, 3.6.0, 3.5.4, 3.5.3, 3.5.2, 3.5.1, 3.5.0, 3.4.1, 3.4.0, 3.3.12, 3.3.11, 3.3.10, 3.3.9, 3.3.8, 3.3.7, 3.3.6, 3.3.5, 3.3.4, 3.3.3, 3.3.2, 3.3.1, 3.3.0, 3.2.2, 3.2.1, 3.2.0, 3.1.3, 3.1.2, 3.1.1, 3.1.0, 3.0.0, 2.15.6, 2.15.5, 2.15.4, 2.15.3, 2.15.2, 2.15.1, 2.15.0, 2.14.22, 2.14.21, 2.14.20, 2.14.19, 2.14.18, 2.14.17, 2.14.16, 2.14.15, 2.14.14, 2.14.13, 2.14.12, 2.14.11, 2.14.10, 2.14.9, 2.14.8, 2.14.7, 2.14.6, 2.14.5, 2.14.4, 2.14.3, 2.14.2, 2.14.1, 2.14.0, 2.13.5, 2.13.4, 2.13.3, 2.13.2, 2.13.1, 2.13.0, 2.12.1, 2.12.0, 2.11.3, 2.11.2, 2.11.1, 2.11.0, 2.10.1, 2.10.0, 2.9.1, 2.9.0, 2.8.4, 2.8.3, 2.8.2, 2.8.1, 2.8.0, 2.7.6, 2.7.5, 2.7.4, 2.7.3, 2.7.2, 2.7.1, 2.7.0, 2.6.1, 2.6.0, 2.5.1, 2.5.0, 2.4.1, 2.4.0, 2.3.0, 2.2.0, 2.1.18, 2.1.17, 2.1.16, 2.1.15, 2.1.14, 2.1.13, 2.1.12, 2.1.11, 2.1.10, 2.1.9, 2.1.8, 2.1.7, 2.1.6, 2.1.5, 2.1.4, 2.1.3, 2.1.2, 2.1.1, 2.1.0, 2.0.2, 2.0.1, 2.0.0, 2.0.0-beta.3, 2.0.0-beta.2, 2.0.0-beta.1, 2.0.0-beta.0, 2.0.0-alpha-5, 2.0.0-alpha.7, 2.0.0-alpha.6.0, 2.0.0-alpha.6, 1.5.0-alpha-4, 1.5.0-alpha-3, 1.5.0-alpha-2, 1.5.0-alpha-1, 1.5.0-alpha-0, 1.4.29, 1.4.28, 1.4.27, 1.4.26, 1.4.25, 1.4.24, 1.4.23, 1.4.22, 1.4.21, 1.4.20, 1.4.19, 1.4.18, 1.4.17, 1.4.16, 1.4.15, 1.4.14, 1.4.13, 1.4.12, 1.4.11, 1.4.10, 1.4.9, 1.4.8, 1.4.7, 1.4.6, 1.4.5, 1.4.4, 1.4.3, 1.4.2, 1.4.1, 1.4.0, 1.3.26, 1.3.25, 1.3.24, 1.3.23, 1.3.22, 1.3.21, 1.3.20, 1.3.18, 1.3.17, 1.3.16, 1.3.15, 1.3.14, 1.3.13, 1.3.12, 1.3.11, 1.3.10, 1.3.9, 1.3.8, 1.3.7, 1.3.6, 1.3.5, 1.3.4, 1.3.2, 1.3.1, 1.3.0, 1.2.8000, 1.2.32, 1.2.31, 1.2.30, 1.2.28, 1.2.27, 1.2.25, 1.2.24, 1.2.23, 1.2.22, 1.2.21, 1.2.20, 1.2.19, 1.1.71, 1.1.70, 1.1.25
+25 silly fetchPackageMetaData
+25 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/lib/node_modules/npm/lib/fetch-package-metadata.js:170:16)
+25 silly fetchPackageMetaData     at /usr/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+25 silly fetchPackageMetaData     at /usr/lib/node_modules/npm/lib/utils/pulse-till-done.js:19:8
+25 silly fetchPackageMetaData     at saved (/usr/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+25 silly fetchPackageMetaData     at /usr/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+25 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:82:15)
+25 silly fetchPackageMetaData  error for npm@lastest [Error: No compatible version found: npm@lastest
+25 silly fetchPackageMetaData Valid install targets:
+25 silly fetchPackageMetaData 3.9.6, 3.9.5, 3.9.4, 3.9.3, 3.9.2, 3.9.1, 3.9.0, 3.8.9, 3.8.8, 3.8.7, 3.8.6, 3.8.5, 3.8.4, 3.8.3, 3.8.2, 3.8.1, 3.8.0, 3.7.5, 3.7.4, 3.7.3, 3.7.2, 3.7.1, 3.7.0, 3.6.0, 3.5.4, 3.5.3, 3.5.2, 3.5.1, 3.5.0, 3.4.1, 3.4.0, 3.3.12, 3.3.11, 3.3.10, 3.3.9, 3.3.8, 3.3.7, 3.3.6, 3.3.5, 3.3.4, 3.3.3, 3.3.2, 3.3.1, 3.3.0, 3.2.2, 3.2.1, 3.2.0, 3.1.3, 3.1.2, 3.1.1, 3.1.0, 3.0.0, 2.15.6, 2.15.5, 2.15.4, 2.15.3, 2.15.2, 2.15.1, 2.15.0, 2.14.22, 2.14.21, 2.14.20, 2.14.19, 2.14.18, 2.14.17, 2.14.16, 2.14.15, 2.14.14, 2.14.13, 2.14.12, 2.14.11, 2.14.10, 2.14.9, 2.14.8, 2.14.7, 2.14.6, 2.14.5, 2.14.4, 2.14.3, 2.14.2, 2.14.1, 2.14.0, 2.13.5, 2.13.4, 2.13.3, 2.13.2, 2.13.1, 2.13.0, 2.12.1, 2.12.0, 2.11.3, 2.11.2, 2.11.1, 2.11.0, 2.10.1, 2.10.0, 2.9.1, 2.9.0, 2.8.4, 2.8.3, 2.8.2, 2.8.1, 2.8.0, 2.7.6, 2.7.5, 2.7.4, 2.7.3, 2.7.2, 2.7.1, 2.7.0, 2.6.1, 2.6.0, 2.5.1, 2.5.0, 2.4.1, 2.4.0, 2.3.0, 2.2.0, 2.1.18, 2.1.17, 2.1.16, 2.1.15, 2.1.14, 2.1.13, 2.1.12, 2.1.11, 2.1.10, 2.1.9, 2.1.8, 2.1.7, 2.1.6, 2.1.5, 2.1.4, 2.1.3, 2.1.2, 2.1.1, 2.1.0, 2.0.2, 2.0.1, 2.0.0, 2.0.0-beta.3, 2.0.0-beta.2, 2.0.0-beta.1, 2.0.0-beta.0, 2.0.0-alpha-5, 2.0.0-alpha.7, 2.0.0-alpha.6.0, 2.0.0-alpha.6, 1.5.0-alpha-4, 1.5.0-alpha-3, 1.5.0-alpha-2, 1.5.0-alpha-1, 1.5.0-alpha-0, 1.4.29, 1.4.28, 1.4.27, 1.4.26, 1.4.25, 1.4.24, 1.4.23, 1.4.22, 1.4.21, 1.4.20, 1.4.19, 1.4.18, 1.4.17, 1.4.16, 1.4.15, 1.4.14, 1.4.13, 1.4.12, 1.4.11, 1.4.10, 1.4.9, 1.4.8, 1.4.7, 1.4.6, 1.4.5, 1.4.4, 1.4.3, 1.4.2, 1.4.1, 1.4.0, 1.3.26, 1.3.25, 1.3.24, 1.3.23, 1.3.22, 1.3.21, 1.3.20, 1.3.18, 1.3.17, 1.3.16, 1.3.15, 1.3.14, 1.3.13, 1.3.12, 1.3.11, 1.3.10, 1.3.9, 1.3.8, 1.3.7, 1.3.6, 1.3.5, 1.3.4, 1.3.2, 1.3.1, 1.3.0, 1.2.8000, 1.2.32, 1.2.31, 1.2.30, 1.2.28, 1.2.27, 1.2.25, 1.2.24, 1.2.23, 1.2.22, 1.2.21, 1.2.20, 1.2.19, 1.1.71, 1.1.70, 1.1.25
+25 silly fetchPackageMetaData ]
+26 silly rollbackFailedOptional Starting
+27 silly rollbackFailedOptional Finishing
+28 silly runTopLevelLifecycles Starting
+29 silly runTopLevelLifecycles Finishing
+30 silly install printInstalled
+31 verbose stack Error: No compatible version found: npm@lastest
+31 verbose stack Valid install targets:
+31 verbose stack 3.9.6, 3.9.5, 3.9.4, 3.9.3, 3.9.2, 3.9.1, 3.9.0, 3.8.9, 3.8.8, 3.8.7, 3.8.6, 3.8.5, 3.8.4, 3.8.3, 3.8.2, 3.8.1, 3.8.0, 3.7.5, 3.7.4, 3.7.3, 3.7.2, 3.7.1, 3.7.0, 3.6.0, 3.5.4, 3.5.3, 3.5.2, 3.5.1, 3.5.0, 3.4.1, 3.4.0, 3.3.12, 3.3.11, 3.3.10, 3.3.9, 3.3.8, 3.3.7, 3.3.6, 3.3.5, 3.3.4, 3.3.3, 3.3.2, 3.3.1, 3.3.0, 3.2.2, 3.2.1, 3.2.0, 3.1.3, 3.1.2, 3.1.1, 3.1.0, 3.0.0, 2.15.6, 2.15.5, 2.15.4, 2.15.3, 2.15.2, 2.15.1, 2.15.0, 2.14.22, 2.14.21, 2.14.20, 2.14.19, 2.14.18, 2.14.17, 2.14.16, 2.14.15, 2.14.14, 2.14.13, 2.14.12, 2.14.11, 2.14.10, 2.14.9, 2.14.8, 2.14.7, 2.14.6, 2.14.5, 2.14.4, 2.14.3, 2.14.2, 2.14.1, 2.14.0, 2.13.5, 2.13.4, 2.13.3, 2.13.2, 2.13.1, 2.13.0, 2.12.1, 2.12.0, 2.11.3, 2.11.2, 2.11.1, 2.11.0, 2.10.1, 2.10.0, 2.9.1, 2.9.0, 2.8.4, 2.8.3, 2.8.2, 2.8.1, 2.8.0, 2.7.6, 2.7.5, 2.7.4, 2.7.3, 2.7.2, 2.7.1, 2.7.0, 2.6.1, 2.6.0, 2.5.1, 2.5.0, 2.4.1, 2.4.0, 2.3.0, 2.2.0, 2.1.18, 2.1.17, 2.1.16, 2.1.15, 2.1.14, 2.1.13, 2.1.12, 2.1.11, 2.1.10, 2.1.9, 2.1.8, 2.1.7, 2.1.6, 2.1.5, 2.1.4, 2.1.3, 2.1.2, 2.1.1, 2.1.0, 2.0.2, 2.0.1, 2.0.0, 2.0.0-beta.3, 2.0.0-beta.2, 2.0.0-beta.1, 2.0.0-beta.0, 2.0.0-alpha-5, 2.0.0-alpha.7, 2.0.0-alpha.6.0, 2.0.0-alpha.6, 1.5.0-alpha-4, 1.5.0-alpha-3, 1.5.0-alpha-2, 1.5.0-alpha-1, 1.5.0-alpha-0, 1.4.29, 1.4.28, 1.4.27, 1.4.26, 1.4.25, 1.4.24, 1.4.23, 1.4.22, 1.4.21, 1.4.20, 1.4.19, 1.4.18, 1.4.17, 1.4.16, 1.4.15, 1.4.14, 1.4.13, 1.4.12, 1.4.11, 1.4.10, 1.4.9, 1.4.8, 1.4.7, 1.4.6, 1.4.5, 1.4.4, 1.4.3, 1.4.2, 1.4.1, 1.4.0, 1.3.26, 1.3.25, 1.3.24, 1.3.23, 1.3.22, 1.3.21, 1.3.20, 1.3.18, 1.3.17, 1.3.16, 1.3.15, 1.3.14, 1.3.13, 1.3.12, 1.3.11, 1.3.10, 1.3.9, 1.3.8, 1.3.7, 1.3.6, 1.3.5, 1.3.4, 1.3.2, 1.3.1, 1.3.0, 1.2.8000, 1.2.32, 1.2.31, 1.2.30, 1.2.28, 1.2.27, 1.2.25, 1.2.24, 1.2.23, 1.2.22, 1.2.21, 1.2.20, 1.2.19, 1.1.71, 1.1.70, 1.1.25
+31 verbose stack
+31 verbose stack     at pickVersionFromRegistryDocument (/usr/lib/node_modules/npm/lib/fetch-package-metadata.js:170:16)
+31 verbose stack     at /usr/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+31 verbose stack     at /usr/lib/node_modules/npm/lib/utils/pulse-till-done.js:19:8
+31 verbose stack     at saved (/usr/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+31 verbose stack     at /usr/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+31 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+32 verbose cwd /home/kadeem/projects/meanstack/sampleapp/views
+33 error Linux 4.4.0-22-generic
+34 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "npm@lastest"
+35 error node v4.4.5
+36 error npm  v3.9.5
+37 error No compatible version found: npm@lastest
+37 error Valid install targets:
+37 error 3.9.6, 3.9.5, 3.9.4, 3.9.3, 3.9.2, 3.9.1, 3.9.0, 3.8.9, 3.8.8, 3.8.7, 3.8.6, 3.8.5, 3.8.4, 3.8.3, 3.8.2, 3.8.1, 3.8.0, 3.7.5, 3.7.4, 3.7.3, 3.7.2, 3.7.1, 3.7.0, 3.6.0, 3.5.4, 3.5.3, 3.5.2, 3.5.1, 3.5.0, 3.4.1, 3.4.0, 3.3.12, 3.3.11, 3.3.10, 3.3.9, 3.3.8, 3.3.7, 3.3.6, 3.3.5, 3.3.4, 3.3.3, 3.3.2, 3.3.1, 3.3.0, 3.2.2, 3.2.1, 3.2.0, 3.1.3, 3.1.2, 3.1.1, 3.1.0, 3.0.0, 2.15.6, 2.15.5, 2.15.4, 2.15.3, 2.15.2, 2.15.1, 2.15.0, 2.14.22, 2.14.21, 2.14.20, 2.14.19, 2.14.18, 2.14.17, 2.14.16, 2.14.15, 2.14.14, 2.14.13, 2.14.12, 2.14.11, 2.14.10, 2.14.9, 2.14.8, 2.14.7, 2.14.6, 2.14.5, 2.14.4, 2.14.3, 2.14.2, 2.14.1, 2.14.0, 2.13.5, 2.13.4, 2.13.3, 2.13.2, 2.13.1, 2.13.0, 2.12.1, 2.12.0, 2.11.3, 2.11.2, 2.11.1, 2.11.0, 2.10.1, 2.10.0, 2.9.1, 2.9.0, 2.8.4, 2.8.3, 2.8.2, 2.8.1, 2.8.0, 2.7.6, 2.7.5, 2.7.4, 2.7.3, 2.7.2, 2.7.1, 2.7.0, 2.6.1, 2.6.0, 2.5.1, 2.5.0, 2.4.1, 2.4.0, 2.3.0, 2.2.0, 2.1.18, 2.1.17, 2.1.16, 2.1.15, 2.1.14, 2.1.13, 2.1.12, 2.1.11, 2.1.10, 2.1.9, 2.1.8, 2.1.7, 2.1.6, 2.1.5, 2.1.4, 2.1.3, 2.1.2, 2.1.1, 2.1.0, 2.0.2, 2.0.1, 2.0.0, 2.0.0-beta.3, 2.0.0-beta.2, 2.0.0-beta.1, 2.0.0-beta.0, 2.0.0-alpha-5, 2.0.0-alpha.7, 2.0.0-alpha.6.0, 2.0.0-alpha.6, 1.5.0-alpha-4, 1.5.0-alpha-3, 1.5.0-alpha-2, 1.5.0-alpha-1, 1.5.0-alpha-0, 1.4.29, 1.4.28, 1.4.27, 1.4.26, 1.4.25, 1.4.24, 1.4.23, 1.4.22, 1.4.21, 1.4.20, 1.4.19, 1.4.18, 1.4.17, 1.4.16, 1.4.15, 1.4.14, 1.4.13, 1.4.12, 1.4.11, 1.4.10, 1.4.9, 1.4.8, 1.4.7, 1.4.6, 1.4.5, 1.4.4, 1.4.3, 1.4.2, 1.4.1, 1.4.0, 1.3.26, 1.3.25, 1.3.24, 1.3.23, 1.3.22, 1.3.21, 1.3.20, 1.3.18, 1.3.17, 1.3.16, 1.3.15, 1.3.14, 1.3.13, 1.3.12, 1.3.11, 1.3.10, 1.3.9, 1.3.8, 1.3.7, 1.3.6, 1.3.5, 1.3.4, 1.3.2, 1.3.1, 1.3.0, 1.2.8000, 1.2.32, 1.2.31, 1.2.30, 1.2.28, 1.2.27, 1.2.25, 1.2.24, 1.2.23, 1.2.22, 1.2.21, 1.2.20, 1.2.19, 1.1.71, 1.1.70, 1.1.25
+38 error If you need help, you may report this error at:
+38 error     <https://github.com/npm/npm/issues>
+39 verbose exit [ 1, true ]

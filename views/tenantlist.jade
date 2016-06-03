@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h3.
+    Tenants
+  ul
+    each tenant, i in tenantlist
+      li#tenant_list_item
+        a(href='#') #{tenant.tenant} lives at #{tenant.street} #{tenant.city}, #{tenant.state}
+
